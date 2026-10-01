@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+
+        .logo-pequeno {
+            width: 50px;
+            height: auto;
+            display: block;
+        }
+
+        .logo-mediano {
+            width: 300px;
+            height: auto;
+            display: block;
+        }
+
+
+        .logo-cabecera {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .barra-navegacion {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .boton-nav {
+            text-decoration: none;
+            color: black;
+            background-color: blanchedalmond;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+        }
+
+        .boton-nav:hover {
+            background-color: rgb(245, 148, 1);
+            color: beige;
+        }
+
+      
+        
+        
+        main {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        aside {
+            width: 25%;
+
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+
+
+        section {
+            width: 75%;
+            background-color: #e0f7fa;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0;">armas</h1>
+            <nav>coleccion</nav>
+            <nav class="barra-navegacion">
+                <a href="semantica.html" class="boton-nav activo">inicio</a>
+                <a href="semantica2.html" class="boton-nav">juego</a>
+                <a href="semantica3.html" class="boton-nav">armas</a>
+            </nav>
+        </div>
+        <img src="images.jpg" alt="imagen inspiradora" class="logo-mediano">
+    </header>
+    <main>
+        <aside>
+            <h3>principales</h3>
+            <img src="guns.jpg" alt="imagen inspiradora" class="logo-mediano">
+        </aside>
+        <section>
+            <article>
+                <h2>armas</h2>
+                <p>las que mas se usan en el juego</p>
+                   <img src="db.jpg" alt="imagen inspiradora" class="logo-mediano">
+                      <img src="best.jpg" alt="imagen inspiradora" class="logo-mediano">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+
+</html>
